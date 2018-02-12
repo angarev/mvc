@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{%block title%}
+    Home
+{%endblock%}
+
+
+{% block content %}
+
+    <h1>Welcome</h1>
+    <p>Hello {{name}} from the view.</p>
+
+    {% for colour in colours %}
+
+    <li>{{colour}}</li>
+
+    {% endfor %}
+
+
+{% endblock %}
